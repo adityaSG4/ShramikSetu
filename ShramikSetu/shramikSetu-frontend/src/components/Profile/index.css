@@ -1,0 +1,49 @@
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 24px;
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.sector-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sector-list label {
+  background: #fff;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  margin-top: 16px;
+  background-color: #dc3545;
+}

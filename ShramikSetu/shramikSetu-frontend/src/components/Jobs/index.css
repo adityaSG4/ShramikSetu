@@ -1,0 +1,195 @@
+
+/*Gradient Text
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.job-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.sidebar-filter {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-filter .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+
+.sidebar-filter .form-select[multiple] {
+  height: auto;
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.sidebar-filter .form-select[multiple]:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.sidebar-filter .form-check {
+  margin-bottom: 1rem;
+}
+
+
+.job-card .card-body {
+  padding: 1rem;
+}
+
+.job-card .card-title {
+  font-size: 1.2rem;
+}
+
+.job-card ul li {
+  margin-bottom: 0.25rem;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .sidebar-filter {
+    padding: 1rem 0.5rem;
+    max-height: none;
+  }
+
+  .job-card .card-title {
+    font-size: 1rem;
+  }
+
+  .container.py-5 {
+    padding: 2rem 1rem !important;
+  }
+}
+*/
+
+/* src/components/Jobs/Jobs.css */
+
+/* Style react-select to better match Bootstrap */
+.select__control {
+  border-color: #ced4da !important; /* Match Bootstrap border */
+  box-shadow: none !important; /* Remove default focus shadow */
+  min-height: 38px; /* Match Bootstrap input height */
+}
+
+.select__control--is-focused {
+  border-color: #86b7fe !important; /* Bootstrap focus color */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.select__multi-value {
+  background-color: #e9ecef !important; /* Lighter background for selected items */
+  border-radius: 0.25rem !important;
+}
+
+.select__multi-value__label {
+  color: #212529 !important;
+  font-size: 0.875em !important; /* Slightly smaller font */
+}
+
+.select__multi-value__remove {
+  color: #6c757d !important;
+}
+.select__multi-value__remove:hover {
+  background-color: #adb5bd !important;
+  color: #fff !important;
+}
+
+/* Ensure sticky top respects header height */
+.filter-sidebar {
+  top: 80px; /* Adjust based on your actual Header height */
+  z-index: 1019; /* Lower than navbar potentially */
+  max-height: calc(100vh - 100px); /* Prevent excessive height */
+  overflow-y: auto; /* Allow scrolling within sidebar if needed */
+  padding-bottom: 1rem; /* Add padding at bottom */
+}
+
+/* Placeholder animation for skeleton */
+.placeholder-glow .placeholder {
+    animation: placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes placeholder-glow {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* src/components/Jobs/Jobs.css */
+
+/* Style react-select to better match Bootstrap */
+.select__control {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+  min-height: 38px;
+}
+.select__control--is-focused {
+  border-color: #86b7fe !important;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+.select__multi-value {
+  background-color: #e9ecef !important;
+  border-radius: 0.25rem !important;
+}
+.select__multi-value__label {
+  color: #212529 !important;
+  font-size: 0.875em !important;
+}
+.select__multi-value__remove:hover {
+  background-color: #adb5bd !important;
+  color: #fff !important;
+}
+
+/* Ensure sticky top respects header height */
+.filter-sidebar {
+  top: 80px; /* Adjust based on your actual Header height */
+  z-index: 1019;
+  max-height: calc(100vh - 100px); /* Limit height */
+  overflow-y: auto; /* Add scroll if content overflows */
+  padding-bottom: 1rem; /* Space at bottom */
+}
+
+/* Improve card hover effect */
+.job-card.hover-shadow {
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.job-card.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important; /* Softer, larger shadow */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Placeholder animation */
+.placeholder-glow .placeholder {
+    animation: placeholder-glow 2s ease-in-out infinite;
+}
+@keyframes placeholder-glow { 50% { opacity: 0.4; } }

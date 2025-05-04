@@ -1,0 +1,70 @@
+/* index.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.find-jobs-button {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.find-jobs-button:hover {
+  background-color: #0b5ed7;
+}
+/* --- Hero Section Styling --- */
+.hero-section {
+  min-height: 91vh; /* Adjust height as needed, maybe not full 100vh if header is tall */
+  /* background: linear-gradient(to bottom, #ffffff, #f8f9fa); Optional subtle gradient */
+}
+
+/* --- Scroll Down Indicator Styling --- */
+.scroll-indicator {
+  left: 50%;
+  transform: translateX(-50%);
+  /* Add subtle animation */
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator .arrow-icon {
+  display: block; /* Make icon block level for easier centering if needed */
+  margin: 0 auto; /* Center icon */
+}
+
+/* Optional: Remove text-decoration from Link wrapping button if needed */
+a:has(> button.btn) {
+  text-decoration: none;
+}
+
+/* Bounce Animation for Scroll Arrow */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, -10px); /* Adjust bounce height */
+  }
+  60% {
+    transform: translate(-50%, -5px); /* Adjust bounce height */
+  }
+}
+
+/* --- Recommendations Section --- */
+
+
+/* Ensure RecommendedJobCard fills the column height if using align-items-stretch */
+/* Add this inside RecommandedJobCard's CSS or style its root element */
+/*
+.recommanded-job-card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.recommanded-job-card-container .card-body {
+  flex-grow: 1;
+}
+*/

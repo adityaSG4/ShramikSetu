@@ -1,0 +1,54 @@
+/* login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+  }
+  
+  .login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    padding-left: 35px;
+    font-size: 1rem;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .btn {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  .text-center p a {
+    text-decoration: none;
+  }
+  
