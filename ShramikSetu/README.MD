@@ -1,4 +1,4 @@
-### 3. Configure Environment Variables
+### Configure Environment Variables
 
 Create a `.env` file in the root of your backend directory and add the following:
 
@@ -14,7 +14,7 @@ JWT_SECRET='your_jwt_secret'
 ```
 
 ---
-### 4. Open in Browser
+### Open in Browser
 #### 🗃️ Database Setup (Paste this in SQL Editor on Neon.tech)
 
 ```sql
